@@ -1,0 +1,21 @@
+.register {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #0000bf;
+}
+form {
+  width: 400px;
+  margin: 40px auto 0px auto;
+  color: white;
+}
+.registerButtons {
+  button:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+.registerErrors {
+  height: 20px;
+}

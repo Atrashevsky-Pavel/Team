@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="formInput">
+    <div class="form-group">
+      <label for="name">Имя</label>
+      <input formControlName="name" type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="surname">Фамилия</label>
+      <input formControlName="surname" type="text" class="form-control" id="surname">
+    </div>
+    <div class="form-group">
+      <label for="profession">Профессия</label>
+      <input formControlName="profession" type="text" class="form-control" id="profession">
+    </div>
+    <div class="form-group">
+      <label for="age">Возраст</label>
+      <input formControlName="age" type="text" class="form-control" id="age">
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+    <button type="submit" class="btn btn-danger" (click)="close()">Отмена</button>
+  </div>
+</form>

@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="buttonBackForward">
+    <button *ngIf="back" class="btn btn-primary" (click)="backCall()"><</button>
+  </div>
+  <div class="buttonsPages">
+    <button  *ngFor="let v of currentButtons"
+            class="btn btn-danger"
+            [disabled]="currentPage === v"
+             (click)="callPage(v)"
+    >{{v}}</button>
+  </div>
+  <div class="buttonBackForward">
+    <button *ngIf="forward" class="btn btn-primary" (click)="forwardCall()">></button>
+  </div>
+</div>
+

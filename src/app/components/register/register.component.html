@@ -1,0 +1,26 @@
+<div class="register">
+   <form [formGroup]="form" (ngSubmit)="submit()">
+     <div class="form-group">
+       <label for="name">Имя</label>
+       <input formControlName="name" type="text" class="form-control" id="name">
+     </div>
+     <div class="form-group">
+       <label for="email">Почта</label>
+       <input formControlName="email" type="text" class="form-control" id="email">
+     </div>
+     <div class="registerErrors">
+
+     </div>
+     <div class="form-group">
+       <label for="password">Пароль</label>
+       <input formControlName="password" type="password" class="form-control" id="password">
+     </div>
+     <div class="registerErrors">
+
+     </div>
+     <div class="registerButtons">
+       <button type="submit" class="btn btn-primary">Отправить</button>
+       <button type="submit" class="btn btn-danger" (click)="close()">Отмена</button>
+     </div>
+   </form>
+</div>

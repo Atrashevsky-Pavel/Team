@@ -1,0 +1,28 @@
+<div *ngFor="let value of item; let idx = index" class="content_table">
+  <div class="content_table_name">
+    <p>{{value.name}} {{value.surname}}</p>
+  </div>
+  <div class="content_table_job">
+    <p>{{value.profession}}</p>
+  </div>
+  <div class="content_table_age">
+    <p>{{value.age}}</p>
+  </div>
+  <div class="content_table_buttons">
+    <button [disabled]="!editCan" class="btn-primary" (click)="edit(idx)">Редактировать</button>
+    <button [disabled]="!editCan" class="btn-danger" (click)="deleteItem(value.id)">Удалить</button>
+  </div>
+</div>
+
+<div class="content_list" *ngFor="let value of item; let idx = index">
+  <div>
+    <p>Name: {{value.name}} {{value.surname}}</p>
+    <p>Profession: {{value.profession}}</p>
+    <p>Age: {{value.age}}</p>
+  </div>
+  <div>
+    <button [disabled]="!editCan" class="btn btn-success" (click)="edit(idx)">Редактировать</button>
+    <button [disabled]="!editCan" class="btn btn-danger" (click)="deleteItem(value.id)">Удалить</button>
+  </div>
+</div>
+

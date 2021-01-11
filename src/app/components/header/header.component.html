@@ -1,0 +1,18 @@
+<header>
+  <div class="headerRegister">
+    <button class="btn btn-danger" (click)="register()">Вход</button>
+    <button class="btn btn-danger" (click)="register()">Регистрация</button>
+    <button class="btn btn-danger" (click)="dropFilters()">Сбросить фильтры</button>
+  </div>
+  <div class="headerSearch">
+    <div>
+      <input type="text" [(ngModel)]="searchValue"  (input)="searchValueSend($event)" class="form-control">
+    </div>
+    <div class="input-group-append">
+      <button (click)="search()" class="btn btn-outline-secondary btn-success">Поиск</button>
+    </div>
+    <div>
+      <button class="btn btn-danger" (click)="filter()">Фильтры</button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+.filters {
+  position: fixed;
+  display: flex;
+  top: 100px;
+  width: 100%;
+  height: 220px;
+  background-color: darkblue;
+  z-index: 3;
+}
+.filters {
+  div {
+    margin-top: 20px;
+    width: 50%;
+    div {
+      width: 200px;
+      margin: 0px auto;
+      color: white;
+    }
+  }
+}
+.filters_sort_name {
+  text-align: center;
+  button {
+   margin-top: 15px;
+   width: 100%;
+  }
+}
+.filters_sort_age {
+  input {
+    display: inline;
+    width: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  button {
+    margin-top: 15px;
+    width: 100%;
+  }
+}

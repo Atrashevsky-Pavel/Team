@@ -1,0 +1,19 @@
+<div class="filters">
+  <div>
+    <div class="filters_sort_name">
+      <p>Сортировка по имени</p>
+      <input type="text" [(ngModel)]="sortValueName" (input)="sortName($event)"  class="form-control">
+      <button class="btn btn-success" (click)="sort()">Сортировать</button>
+    </div>
+  </div>
+  <div>
+    <div class="filters_sort_age">
+      <p>Сортироовка по возрасту</p>
+      <span>От</span>
+      <input type="text" [(ngModel)]="sortValueAgeStart" (input)="sortAgeStart($event)" class="form-control">
+      <span>До</span>
+      <input type="text" [(ngModel)]="sortValueAgeEnd" (input)="sortAgeEnd($event)"  class="form-control">
+      <button class="btn btn-success" (click)="sort()">Сортировать</button>
+    </div>
+  </div>
+</div>

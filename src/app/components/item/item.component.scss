@@ -1,0 +1,57 @@
+.content_table {
+  width: min-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  div {
+    border: 1px solid black;
+  }
+}
+.content_table_name {
+  width: 150px;
+}
+.content_table_job {
+  width: 300px;
+}
+.content_table_age {
+  width: 40px;
+}
+.content_table_buttons {
+  width: 240px;
+  button {
+    margin-top: 5px;
+  }
+  button:nth-child(1) {
+    margin-right: 15px;
+  }
+}
+
+.content_list {
+  margin: 10px 10px 0px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  div:nth-child(1) {
+    width: 420px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  div:nth-child(2) {
+    width: max-content;
+    padding-right: 10px;
+    button {
+      width: 135px;
+      margin-top: 15px;
+      float: right;
+      margin-left: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .content_table {display: none;}
+  .content_list {display: flex}
+}
+@media (min-width: 768px) {
+  .content_table {display: flex;}
+  .content_list {display: none}
+}
